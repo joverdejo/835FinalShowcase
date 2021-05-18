@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		221FA8902611C03100F4713C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221FA88F2611C03100F4713C /* AppDelegate.swift */; };
+		221FA8922611C03100F4713C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221FA8912611C03100F4713C /* SceneDelegate.swift */; };
+		221FA8942611C03100F4713C /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221FA8932611C03100F4713C /* SetupViewController.swift */; };
+		221FA8972611C03100F4713C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221FA8952611C03100F4713C /* Main.storyboard */; };
+		221FA89A2611C03100F4713C /* DriveMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 221FA8982611C03100F4713C /* DriveMonitor.xcdatamodeld */; };
+		221FA89C2611C03400F4713C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221FA89B2611C03400F4713C /* Assets.xcassets */; };
+		221FA89F2611C03400F4713C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221FA89D2611C03400F4713C /* LaunchScreen.storyboard */; };
+		221FA8AA2611C03400F4713C /* DriveMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221FA8A92611C03400F4713C /* DriveMonitorTests.swift */; };
+		221FA8B52611C03400F4713C /* DriveMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221FA8B42611C03400F4713C /* DriveMonitorUITests.swift */; };
+		221FA8C72611C09F00F4713C /* EITKitMobile in Frameworks */ = {isa = PBXBuildFile; productRef = 221FA8C62611C09F00F4713C /* EITKitMobile */; };
+		221FA8CC2611C1A200F4713C /* GestureClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 221FA8CB2611C1A200F4713C /* GestureClassifier 1.mlmodel */; };
+		221FA8D42611C9A500F4713C /* YN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221FA8D02611C9A500F4713C /* YN.jpg */; };
+		221FA8D52611C9A500F4713C /* YY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221FA8D12611C9A500F4713C /* YY.jpg */; };
+		221FA8D62611C9A500F4713C /* NN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221FA8D22611C9A500F4713C /* NN.jpg */; };
+		221FA8D72611C9A500F4713C /* NY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221FA8D32611C9A500F4713C /* NY.jpg */; };
+		221FA8E32611D79D00F4713C /* DriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221FA8E22611D79D00F4713C /* DriveViewController.swift */; };
+		2267FDEA26181BA400C17EC1 /* DrivingClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2267FDE926181BA400C17EC1 /* DrivingClassifier.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		221FA8A62611C03400F4713C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 221FA8842611C03100F4713C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 221FA88B2611C03100F4713C;
+			remoteInfo = DriveMonitor;
+		};
+		221FA8B12611C03400F4713C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 221FA8842611C03100F4713C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 221FA88B2611C03100F4713C;
+			remoteInfo = DriveMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		221FA88C2611C03100F4713C /* DriveMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		221FA88F2611C03100F4713C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		221FA8912611C03100F4713C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		221FA8932611C03100F4713C /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		221FA8962611C03100F4713C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		221FA8992611C03100F4713C /* DriveMonitor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DriveMonitor.xcdatamodel; sourceTree = "<group>"; };
+		221FA89B2611C03400F4713C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		221FA89E2611C03400F4713C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		221FA8A02611C03400F4713C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		221FA8A52611C03400F4713C /* DriveMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		221FA8A92611C03400F4713C /* DriveMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveMonitorTests.swift; sourceTree = "<group>"; };
+		221FA8AB2611C03400F4713C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		221FA8B02611C03400F4713C /* DriveMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		221FA8B42611C03400F4713C /* DriveMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveMonitorUITests.swift; sourceTree = "<group>"; };
+		221FA8B62611C03400F4713C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		221FA8CB2611C1A200F4713C /* GestureClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "GestureClassifier 1.mlmodel"; sourceTree = "<group>"; };
+		221FA8D02611C9A500F4713C /* YN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YN.jpg; sourceTree = "<group>"; };
+		221FA8D12611C9A500F4713C /* YY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YY.jpg; sourceTree = "<group>"; };
+		221FA8D22611C9A500F4713C /* NN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NN.jpg; sourceTree = "<group>"; };
+		221FA8D32611C9A500F4713C /* NY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NY.jpg; sourceTree = "<group>"; };
+		221FA8E22611D79D00F4713C /* DriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveViewController.swift; sourceTree = "<group>"; };
+		2267FDE926181BA400C17EC1 /* DrivingClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DrivingClassifier.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		221FA8892611C03100F4713C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221FA8C72611C09F00F4713C /* EITKitMobile in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221FA8A22611C03400F4713C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221FA8AD2611C03400F4713C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		221FA8832611C03100F4713C = {
+			isa = PBXGroup;
+			children = (
+				221FA88E2611C03100F4713C /* DriveMonitor */,
+				221FA8A82611C03400F4713C /* DriveMonitorTests */,
+				221FA8B32611C03400F4713C /* DriveMonitorUITests */,
+				221FA88D2611C03100F4713C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		221FA88D2611C03100F4713C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				221FA88C2611C03100F4713C /* DriveMonitor.app */,
+				221FA8A52611C03400F4713C /* DriveMonitorTests.xctest */,
+				221FA8B02611C03400F4713C /* DriveMonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		221FA88E2611C03100F4713C /* DriveMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				221FA8CB2611C1A200F4713C /* GestureClassifier 1.mlmodel */,
+				2267FDE926181BA400C17EC1 /* DrivingClassifier.mlmodel */,
+				221FA88F2611C03100F4713C /* AppDelegate.swift */,
+				221FA8912611C03100F4713C /* SceneDelegate.swift */,
+				221FA8932611C03100F4713C /* SetupViewController.swift */,
+				221FA8952611C03100F4713C /* Main.storyboard */,
+				221FA8E22611D79D00F4713C /* DriveViewController.swift */,
+				221FA89B2611C03400F4713C /* Assets.xcassets */,
+				221FA89D2611C03400F4713C /* LaunchScreen.storyboard */,
+				221FA8A02611C03400F4713C /* Info.plist */,
+				221FA8982611C03100F4713C /* DriveMonitor.xcdatamodeld */,
+				221FA8DB2611C9AD00F4713C /* Photos */,
+			);
+			path = DriveMonitor;
+			sourceTree = "<group>";
+		};
+		221FA8A82611C03400F4713C /* DriveMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				221FA8A92611C03400F4713C /* DriveMonitorTests.swift */,
+				221FA8AB2611C03400F4713C /* Info.plist */,
+			);
+			path = DriveMonitorTests;
+			sourceTree = "<group>";
+		};
+		221FA8B32611C03400F4713C /* DriveMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				221FA8B42611C03400F4713C /* DriveMonitorUITests.swift */,
+				221FA8B62611C03400F4713C /* Info.plist */,
+			);
+			path = DriveMonitorUITests;
+			sourceTree = "<group>";
+		};
+		221FA8DB2611C9AD00F4713C /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				221FA8D22611C9A500F4713C /* NN.jpg */,
+				221FA8D32611C9A500F4713C /* NY.jpg */,
+				221FA8D02611C9A500F4713C /* YN.jpg */,
+				221FA8D12611C9A500F4713C /* YY.jpg */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		221FA88B2611C03100F4713C /* DriveMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 221FA8B92611C03400F4713C /* Build configuration list for PBXNativeTarget "DriveMonitor" */;
+			buildPhases = (
+				221FA8882611C03100F4713C /* Sources */,
+				221FA8892611C03100F4713C /* Frameworks */,
+				221FA88A2611C03100F4713C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DriveMonitor;
+			packageProductDependencies = (
+				221FA8C62611C09F00F4713C /* EITKitMobile */,
+			);
+			productName = DriveMonitor;
+			productReference = 221FA88C2611C03100F4713C /* DriveMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		221FA8A42611C03400F4713C /* DriveMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 221FA8BC2611C03400F4713C /* Build configuration list for PBXNativeTarget "DriveMonitorTests" */;
+			buildPhases = (
+				221FA8A12611C03400F4713C /* Sources */,
+				221FA8A22611C03400F4713C /* Frameworks */,
+				221FA8A32611C03400F4713C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				221FA8A72611C03400F4713C /* PBXTargetDependency */,
+			);
+			name = DriveMonitorTests;
+			productName = DriveMonitorTests;
+			productReference = 221FA8A52611C03400F4713C /* DriveMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		221FA8AF2611C03400F4713C /* DriveMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 221FA8BF2611C03400F4713C /* Build configuration list for PBXNativeTarget "DriveMonitorUITests" */;
+			buildPhases = (
+				221FA8AC2611C03400F4713C /* Sources */,
+				221FA8AD2611C03400F4713C /* Frameworks */,
+				221FA8AE2611C03400F4713C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				221FA8B22611C03400F4713C /* PBXTargetDependency */,
+			);
+			name = DriveMonitorUITests;
+			productName = DriveMonitorUITests;
+			productReference = 221FA8B02611C03400F4713C /* DriveMonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		221FA8842611C03100F4713C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					221FA88B2611C03100F4713C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					221FA8A42611C03400F4713C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 221FA88B2611C03100F4713C;
+					};
+					221FA8AF2611C03400F4713C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 221FA88B2611C03100F4713C;
+					};
+				};
+			};
+			buildConfigurationList = 221FA8872611C03100F4713C /* Build configuration list for PBXProject "DriveMonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 221FA8832611C03100F4713C;
+			packageReferences = (
+				221FA8C52611C09F00F4713C /* XCRemoteSwiftPackageReference "EITKitMobile" */,
+			);
+			productRefGroup = 221FA88D2611C03100F4713C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				221FA88B2611C03100F4713C /* DriveMonitor */,
+				221FA8A42611C03400F4713C /* DriveMonitorTests */,
+				221FA8AF2611C03400F4713C /* DriveMonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		221FA88A2611C03100F4713C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221FA8D52611C9A500F4713C /* YY.jpg in Resources */,
+				221FA8D42611C9A500F4713C /* YN.jpg in Resources */,
+				221FA89F2611C03400F4713C /* LaunchScreen.storyboard in Resources */,
+				221FA8D72611C9A500F4713C /* NY.jpg in Resources */,
+				221FA8D62611C9A500F4713C /* NN.jpg in Resources */,
+				221FA89C2611C03400F4713C /* Assets.xcassets in Resources */,
+				221FA8972611C03100F4713C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221FA8A32611C03400F4713C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221FA8AE2611C03400F4713C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		221FA8882611C03100F4713C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221FA8942611C03100F4713C /* SetupViewController.swift in Sources */,
+				221FA8902611C03100F4713C /* AppDelegate.swift in Sources */,
+				221FA8922611C03100F4713C /* SceneDelegate.swift in Sources */,
+				2267FDEA26181BA400C17EC1 /* DrivingClassifier.mlmodel in Sources */,
+				221FA8CC2611C1A200F4713C /* GestureClassifier 1.mlmodel in Sources */,
+				221FA89A2611C03100F4713C /* DriveMonitor.xcdatamodeld in Sources */,
+				221FA8E32611D79D00F4713C /* DriveViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221FA8A12611C03400F4713C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221FA8AA2611C03400F4713C /* DriveMonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		221FA8AC2611C03400F4713C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221FA8B52611C03400F4713C /* DriveMonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		221FA8A72611C03400F4713C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 221FA88B2611C03100F4713C /* DriveMonitor */;
+			targetProxy = 221FA8A62611C03400F4713C /* PBXContainerItemProxy */;
+		};
+		221FA8B22611C03400F4713C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 221FA88B2611C03100F4713C /* DriveMonitor */;
+			targetProxy = 221FA8B12611C03400F4713C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		221FA8952611C03100F4713C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				221FA8962611C03100F4713C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		221FA89D2611C03400F4713C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				221FA89E2611C03400F4713C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		221FA8B72611C03400F4713C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		221FA8B82611C03400F4713C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		221FA8BA2611C03400F4713C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRFJFDRBMR;
+				INFOPLIST_FILE = DriveMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jover.AirGuitar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		221FA8BB2611C03400F4713C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRFJFDRBMR;
+				INFOPLIST_FILE = DriveMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jover.AirGuitar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		221FA8BD2611C03400F4713C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRFJFDRBMR;
+				INFOPLIST_FILE = DriveMonitorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jover.DriveMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriveMonitor.app/DriveMonitor";
+			};
+			name = Debug;
+		};
+		221FA8BE2611C03400F4713C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRFJFDRBMR;
+				INFOPLIST_FILE = DriveMonitorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jover.DriveMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriveMonitor.app/DriveMonitor";
+			};
+			name = Release;
+		};
+		221FA8C02611C03400F4713C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRFJFDRBMR;
+				INFOPLIST_FILE = DriveMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jover.DriveMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DriveMonitor;
+			};
+			name = Debug;
+		};
+		221FA8C12611C03400F4713C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRFJFDRBMR;
+				INFOPLIST_FILE = DriveMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jover.DriveMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DriveMonitor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		221FA8872611C03100F4713C /* Build configuration list for PBXProject "DriveMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221FA8B72611C03400F4713C /* Debug */,
+				221FA8B82611C03400F4713C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		221FA8B92611C03400F4713C /* Build configuration list for PBXNativeTarget "DriveMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221FA8BA2611C03400F4713C /* Debug */,
+				221FA8BB2611C03400F4713C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		221FA8BC2611C03400F4713C /* Build configuration list for PBXNativeTarget "DriveMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221FA8BD2611C03400F4713C /* Debug */,
+				221FA8BE2611C03400F4713C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		221FA8BF2611C03400F4713C /* Build configuration list for PBXNativeTarget "DriveMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221FA8C02611C03400F4713C /* Debug */,
+				221FA8C12611C03400F4713C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		221FA8C52611C09F00F4713C /* XCRemoteSwiftPackageReference "EITKitMobile" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joverde/EITKitMobile";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		221FA8C62611C09F00F4713C /* EITKitMobile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 221FA8C52611C09F00F4713C /* XCRemoteSwiftPackageReference "EITKitMobile" */;
+			productName = EITKitMobile;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		221FA8982611C03100F4713C /* DriveMonitor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				221FA8992611C03100F4713C /* DriveMonitor.xcdatamodel */,
+			);
+			currentVersion = 221FA8992611C03100F4713C /* DriveMonitor.xcdatamodel */;
+			path = DriveMonitor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 221FA8842611C03100F4713C /* Project object */;
+}

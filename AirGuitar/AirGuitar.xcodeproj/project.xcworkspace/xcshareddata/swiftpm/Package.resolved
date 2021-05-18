@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "EITKitMobile",
+        "repositoryURL": "https://github.com/joverde/EITKitMobile",
+        "state": {
+          "branch": "main",
+          "revision": "dba64918c5067120a5a0535d637c49859690409a",
+          "version": null
+        }
+      },
+      {
+        "package": "Surge",
+        "repositoryURL": "https://github.com/Jounce/Surge",
+        "state": {
+          "branch": null,
+          "revision": "6e4a47e63da8801afe6188cf039e9f04eb577721",
+          "version": "2.3.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
