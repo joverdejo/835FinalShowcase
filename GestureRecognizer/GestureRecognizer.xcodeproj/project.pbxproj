@@ -621,7 +621,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		221FA8782611BD4A00F4713C /* XCRemoteSwiftPackageReference "EITKitMobile" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/joverde/EITKitMobile";
+			repositoryURL = "https://github.com/ccfbeltran/EITKitMobile.git";
 			requirement = {
 				branch = main;
 				kind = branch;
