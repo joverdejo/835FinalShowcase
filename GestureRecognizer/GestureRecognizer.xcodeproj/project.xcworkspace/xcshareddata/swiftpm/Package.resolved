@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/ccfbeltran/EITKitMobile.git",
         "state": {
           "branch": "master",
-          "revision": "31323252f4dc0e6da81a5619ef208407f2f860a3",
+          "revision": "e91f77afe6486cc9afd891373607e5bf6d26afd2",
           "version": null
         }
       },
@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/Jounce/Surge",
         "state": {
           "branch": null,
-          "revision": "e91f77afe6486cc9afd891373607e5bf6d26afd2",
+          "revision": "6e4a47e63da8801afe6188cf039e9f04eb577721",
           "version": "2.3.2"
         }
       }
