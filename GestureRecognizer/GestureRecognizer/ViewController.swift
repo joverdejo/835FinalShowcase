@@ -13,7 +13,7 @@ import Vision
 import EITKitMobile
 
 
-let serviceUUID = CBUUID(string: "4fafc201-1fb5-459e-8fcc-c5c9c331914b")
+let serviceUUID = CBUUID(string: "74278BDA-B644-4520-8F0C-720EAF059935")
 let characteristicUUID = CBUUID(string: "beb5483e-36e1-4688-b7f5-ea07361b26a8")
 var pts = [[Double]]()
 var tri = [[Int]]()
