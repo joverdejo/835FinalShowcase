@@ -63,9 +63,9 @@ class ViewController: UIViewController,  CBPeripheralDelegate, CBCentralManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
         // extract node, element, alpha
-        (eit,pts,tri) = mesh_setup(16)
+        (eit,pts,tri) = mesh_setup(16,shape:"circle")
         var ds_black = [Double](repeatElement(0.0, count: tri.count*3))
-        let (mesh,info) = mapSingle(ds: ds_black,pts: pts,tri: tri, w: Double(self.view.frame.width))
+        let (mesh,info) = mapSingle(ds: ds_black,pts: pts,tri: tri, w: Double(self.view.frame.width),shape:"circle")
         mesh.tag = frameTag
         info.tag = infoTag
         mesh.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.width)
@@ -104,7 +104,7 @@ class ViewController: UIViewController,  CBPeripheralDelegate, CBCentralManagerD
         gestureLabel.isHidden = true
         confidenceLabel.isHidden = true
         var ds_black = [Double](repeatElement(0.0, count: tri.count*3))
-        let (mesh,info) = mapSingle(ds: ds_black,pts: pts,tri: tri, w: Double(self.view.frame.width))
+        let (mesh,info) = mapSingle(ds: ds_black,pts: pts,tri: tri, w: Double(self.view.frame.width),shape:"circle")
         mesh.tag = frameTag
         info.tag = infoTag
         mesh.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.width)
@@ -211,7 +211,7 @@ class ViewController: UIViewController,  CBPeripheralDelegate, CBCentralManagerD
                         if (self.view.viewWithTag(infoTag) != nil){
                             self.view.viewWithTag(infoTag)!.removeFromSuperview()
                         }
-                        let (mesh,info) = mapSingle(ds: ds,pts: pts,tri: tri, w: Double(self.view.frame.width))
+                        let (mesh,info) = mapSingle(ds: ds,pts: pts,tri: tri, w: Double(self.view.frame.width),shape:"circle")
                         mesh.tag = frameTag
                         info.tag = infoTag
                         mesh.center = CGPoint(x: self.view.frame.width/2, y: self.view.frame.width)

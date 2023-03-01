@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "EITKitMobile",
-        "repositoryURL": "https://github.com/joverde/EITKitMobile",
+        "repositoryURL": "https://github.com/ccfbeltran/EITKitMobile.git",
         "state": {
-          "branch": "main",
-          "revision": "dba64918c5067120a5a0535d637c49859690409a",
+          "branch": "master",
+          "revision": "e91f77afe6486cc9afd891373607e5bf6d26afd2",
           "version": null
         }
       },
